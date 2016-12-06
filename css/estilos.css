@@ -7,10 +7,12 @@ body{
 }
 .cabecalho{
   background: #0082c7;
-  padding: 16px;
 }
 .cartao-conteudo {
   background-color: #EBEF40;
   margin: 16px;
   padding: 16px;
+}
+.container{
+  padding: 0 10%;
 }
