@@ -6,25 +6,74 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ceep - Home</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/cabecalho.css">
+  <link rel="stylesheet" href="css/opcoesDaPagina.css">
+  <link rel="stylesheet" href="css/opcoesDoCartao.css">
+  <link rel="stylesheet" href="css/cartao.css">
+  <link rel="stylesheet" href="css/novoCartao.css">
+  <link rel="stylesheet" href="css/mural.css">
+
 </head>
 <body>
-  <h1 class="cabecalho container">Ceep</h1>
-  <section class="container">
-    <div class="cartao">
+  <header class="cabecalho container">
+    <h1 class="cabecalho-logo">Ceep</h1>
+    <div class="opcoesDaPagina">
+      <input type="search" placeholder="O que você quer?" id="busca" class="opcoesDaPagina-opcao">
+      <button id="sync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botao-Sync">
+        <svg height="1em" viewBox="0 0 384 384">
+        	<title>sincronizar</title>
+        	<path d="M327.731 172.734c5.938 40.859-6.531 83.891-38.406 115.297-47.094 46.469-119.75 52.188-173.188 17.281l37.438-36.5-137.595-19.188 19.203 134.375 42.015-40.25c75.453 55.625 182.469 50.375 251.032-17.281 39.75-39.219 57.875-91.281 55.625-142.656l-56.125-11.078zM94.73 96.031c47.078-46.469 119.719-52.219 173.156-17.281l-37.5 36.484 137.594 19.203-19.188-134.438-41.969 40.344c-75.469-55.672-182.453-50.359-251.031 17.281-39.75 39.203-57.859 91.266-55.625 142.625l56.125 11.063c-5.938-40.875 6.563-83.859 38.438-115.281z"></path></svg>
+      </button>
+      <button id="ajuda" class="opcoesDaPagina-opcao opcoesDaPagina-botao">?</button>
+      <button id="mudaLayout" class="opcoesDaPagina-opcao opcoesDaPagina-botao">Linhas</button>
+    </div>
+  </header>
+  <form class="novoCartao container">
+    <textarea class="novoCartao-conteudo" cols="30" rows="10"  id="novoCartao-Conteudo" placeholder="Digite aqui" ></textarea>
+    <input class="novoCartao-salvar" type="submit" value="Salvar">
+  </form>
+  <section class="container mural">
+    <!-- <div class="cartao" id="cartao_1">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="1">Remover</button>
+      </div>
       <p class="cartao-conteudo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nulla necessitatibus, ea accusamus sed obcaecati deserunt illo a natus cupiditate eveniet ipsa ducimus quaerat. Laboriosam id impedit vero! Molestiae, temporibus.</p>
     </div>
-    <div class="cartao">
+    <div class="cartao" id="cartao_2">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="2">Remover</button>
+      </div>
       <p class="cartao-conteudo">Dolore veritatis possimus laboriosam saepe, iure ipsum corporis dignissimos, perferendis necessitatibus enim officia error numquam modi molestias? Maiores qui, blanditiis dignissimos molestiae autem beatae quae, eum harum eius pariatur, suscipit.</p>
     </div>
-    <div class="cartao">
+    <div class="cartao" id="cartao_3">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="3">Remover</button>
+      </div>
       <p class="cartao-conteudo">Omnis iure reprehenderit quaerat odit consequatur, voluptates excepturi animi, temporibus quasi veritatis officia aperiam tempore rem iusto. Optio vero ducimus ea odit ullam repudiandae, iste ipsum cum temporibus rerum, non!</p>
     </div>
-    <div class="cartao">
+    <div class="cartao" id="cartao_4">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="4">Remover</button>
+      </div>
       <p class="cartao-conteudo">Modi exercitationem debitis nulla possimus. Quod sapiente, unde, id quos a labore magni consectetur earum dolores neque, recusandae maxime. Repellat officiis illo sint architecto debitis, nemo omnis nihil harum quis.</p>
     </div>
-    <div class="cartao">
+    <div class="cartao" id="cartao_5">
+      <div class="opcoesDoCartao">
+        <button class="opcoesDoCartao-remove opcoesDoCartao-opcao" data-ref="5">Remover</button>
+      </div>
       <p class="cartao-conteudo">Necessitatibus fugit sint aut hic eligendi reprehenderit tempore doloremque veritatis quaerat nobis, quae nam excepturi modi facilis, dolorem magni blanditiis iusto eum, expedita ab nesciunt, voluptatem recusandae? Odio officia, eius.</p>
-    </div>
+    </div> -->
   </section>
+  <script src="js/jquery.js"></script>
+  <script src="js/mudaLayout.js"></script>
+  <script src="js/busca.js"></script>
+  <script src="js/novoCartao.js"></script>
+  <script src="js/ajuda.js"></script>
+  <script src="js/sincronizacao.js"></script>
+  <script src="js/criaOpcoesDoCartao.js"></script>
+  <script src="js/controladorDeCartoes.js"></script>
+  <script src="js/lib/neia.js"></script>
+
+
 </body>
 </html>
