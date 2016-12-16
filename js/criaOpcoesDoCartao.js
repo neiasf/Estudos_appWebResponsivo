@@ -12,6 +12,16 @@ var criaOpcoesDoCartao =( function () {
     },400)
   }
 
+  var ehPraEditar = false;
+  function toggleEdicao() {
+    var cartao = $("#cartao_" + this.dataset.ref);
+    var conteudo = cartao.find(".cartao-conteudo");
+
+    if (ehPraEditar)
+
+
+  }
+
 return function(idNovoCartao) {
   var botaoRemove = $("<button>").addClass("opcoesDoCartao-remove")
                                             .addClass("opcoesDoCartao-opcao")
